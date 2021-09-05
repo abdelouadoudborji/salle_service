@@ -18,9 +18,9 @@ public class Salle {
     @Column(length = 75)
     private String Code;
     @Column(length = 75)
-    private String nom;
-    @Column(length = 75)
-    private String address;
+    private String nom; 
+    private double latitude;
+    private double longitude;
     @JsonIgnore
     @OneToMany(fetch = FetchType.LAZY,mappedBy = "salle")
     private Set<Media> MediaList ;
