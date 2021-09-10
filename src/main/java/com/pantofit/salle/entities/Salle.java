@@ -16,7 +16,7 @@ public class Salle {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column(length = 75)
-    private String Code;
+    private String code;
     @Column(length = 75)
     private String nom; 
     private double latitude;
